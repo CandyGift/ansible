@@ -1,0 +1,9 @@
+- name:
+  hosts: local
+  vars:
+   course: "Devops"
+   batch: " 82s"
+  tasks:
+   - name: 
+     ansible.builtin.debug:
+      msg:"{{ course }} and {{ batch }}"
