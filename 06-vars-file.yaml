@@ -1,0 +1,21 @@
+- name:
+  hosts: local
+  vars:
+   course: "dot net"
+   batch: " ECE"
+   year: "2000"
+  # vars_files:
+  #  course.yaml
+  tasks:
+  - name:
+    ansible.builtin.debug:
+     msg: "{{ course }},{{ batch }},{{ year }}"
+
+  - name:
+    vars:
+     course: "python"
+     batch: "EEE"
+     year: "1995"
+    ansible.builtin.debug:
+     msg: "{{ course }},{{ batch }},{{ year }}"
+  
