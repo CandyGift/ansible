@@ -1,11 +1,11 @@
 - name:
   hosts: local
-  vars:
-   course: "dot net"
-   batch: " ECE"
-   year: "2000"
-  # vars_files:
-  #  course.yaml
+  # vars:
+  #  course: "dot net"
+  #  batch: " ECE"
+  #  year: "2000"
+  vars_files:
+   course.yaml
   tasks:
   - name:
     ansible.builtin.debug:
