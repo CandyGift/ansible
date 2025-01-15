@@ -6,4 +6,4 @@
   tasks:
    - name: 
      ansible.builtin.debug:
-      msg:"{{ course }}, and {{ batch }}"
+       msg: "{{ course }}, and {{ batch }}"
